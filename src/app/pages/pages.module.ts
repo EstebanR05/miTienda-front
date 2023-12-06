@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 
-
 @NgModule({
   declarations: [
-      //UsersComponent
+    //UsersComponent
   ],
   imports: [
     CommonModule,
