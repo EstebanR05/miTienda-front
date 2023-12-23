@@ -8,7 +8,8 @@ const routes: Routes = [
         children: [
             { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
             { path: 'spareParts', loadChildren: () => import('./spareParts/spare-parts.module').then(m => m.SparePartsModule) },
-            { path: 'sales', loadChildren: () => import('./sales/sales.module').then(m => m.SalesModule) }
+            { path: 'sales', loadChildren: () => import('./sales/sales.module').then(m => m.SalesModule) },
+            { path: 'brand', loadChildren: () => import('./brand/brand.module').then(m => m.BrandModule) }
         ]
     },
 ];
