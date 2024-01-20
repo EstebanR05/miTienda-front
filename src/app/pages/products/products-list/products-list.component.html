@@ -1,5 +1,5 @@
 <div class="my-2 d-flex justify-content-between">
-	<div class="fw-bold">Ventas</div>
+	<div class="fw-bold">Repuestos</div>
 </div>
 
 <div class="card p-2">
@@ -9,8 +9,7 @@
 			<div class="d-flex flex-row-reverse bd-highlight">
 				<div class="btn-group">
 					<button type="button"
-						routerLink="create"
-						class="btn btn-white text-dark p-0">
+						class="btn btn-white text-dark p-0" routerLink="create">
 						<svg xmlns="http://www.w3.org/2000/svg"
 							width="22"
 							height="22"
@@ -30,30 +29,25 @@
 			<table class="table">
 				<thead>
 					<tr>
-						<th scope="col">Nombre Repuesto</th>
-						<th scope="col">Vehiculo</th>
+						<th scope="col">Nombre</th>
+						<th scope="col">Marca</th>
 						<th scope="col">Modelo</th>
 						<th scope="col">Referencia</th>
-						<th scope="col">Precio venta</th>
-						<th scope="col">Fecha</th>
-						<th scope="col">Options</th>
+						<th scope="col">Cantidad</th>
+						<th scope="col">Opciones</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>Empaque de culata</td>
-						<td>mazda</td>
-						<td>1993</td>
+						<td>mazda 323</td>
+						<td>98</td>
 						<td>001</td>
-						<td>
-							{{200.000 | currency}}
-						</td>
-						<td>{{"13-20-23"}}</td>
+						<td>20</td>
 						<td>
 							<div>
 								<button type="button"
-									class="btn btn-white text-dark mr-2"
-									routerLink="edit/1">
+									class="btn btn-white text-dark mr-2" routerLink="edit/1">
 									<svg xmlns="http://www.w3.org/2000/svg"
 										width="16"
 										height="16"
@@ -76,7 +70,7 @@
 								</button>
 							</div>
 						</td>
-					</tr>
+                    </tr>
 				</tbody>
 			</table>
 		</div>

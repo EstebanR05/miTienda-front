@@ -4,12 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
 
 @NgModule({
-  declarations: [
-    //UsersComponent
-  ],
-  imports: [
-    CommonModule,
-    PagesRoutingModule
-  ]
+    declarations: [],
+    imports: [CommonModule, PagesRoutingModule],
 })
-export class PagesModule { }
+export class PagesModule {}
