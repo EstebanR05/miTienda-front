@@ -18,7 +18,7 @@
 
 <form #ngForm="ngForm"
 	[formGroup]="this.form"
-	(ngSubmit)="saveProducts()"
+	(ngSubmit)="this.save();"
 	role="form">
 	<div class="card p-2 mt-2">
 		<div class="card-header bg-white p-1">
@@ -41,7 +41,7 @@
 		</div>
 		<div class="card-body">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<label for="inputState"
 						class="form-label text-dark">
 						producto
@@ -57,7 +57,7 @@
 						</label>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<label for="inputState"
 						class="form-label text-dark">
 						Marca
@@ -73,7 +73,7 @@
 						</label>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<label for="inputState"
 						class="form-label text-dark">
 						Modelo
@@ -89,9 +89,7 @@
 						</label>
 					</div>
 				</div>
-			</div>
-			<div class="row mt-2">
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<label for="inputState"
 						class="form-label text-dark">
 						Referencia
@@ -107,7 +105,9 @@
 						</label>
 					</div>
 				</div>
-				<div class="col-lg-4">
+			</div>
+			<div class="row mt-2">
+				<div class="col-lg-3">
 					<label for="inputState"
 						class="form-label text-dark">
 						Cantidad
@@ -123,7 +123,7 @@
 						</label>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<label for="inputState"
 						class="form-label text-dark">
 						Precio

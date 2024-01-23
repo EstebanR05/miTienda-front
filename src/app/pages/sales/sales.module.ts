@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SalesRoutingModule } from './sales-routing.module';
 import { SalesListComponent } from './sales-list/sales-list.component';
 import { SalesManagerComponent } from './sales-manager/sales-manager.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SalesManagerComponent } from './sales-manager/sales-manager.component';
   ],
   imports: [
     CommonModule,
-    SalesRoutingModule
+    SalesRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class SalesModule { }

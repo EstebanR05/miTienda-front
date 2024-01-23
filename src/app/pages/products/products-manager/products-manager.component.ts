@@ -29,7 +29,7 @@ export class ProductsManagerComponent extends BaseComponent implements OnInit {
     });
   }
 
-  public saveProducts(): void {
+  public save(): void {
     if (this.form.valid) {
       Swal.fire({
         icon: "question",

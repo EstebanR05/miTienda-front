@@ -6,17 +6,15 @@ import { BaseComponent } from 'src/app/shared/Core/base-component/base.component
 import { Sales } from 'src/app/shared/interfaces/Sales.interface';
 import Swal from 'sweetalert2';
 
-
 @Component({
-  selector: 'app-sales-manager',
-  templateUrl: './sales-manager.component.html',
-  styleUrls: ['./sales-manager.component.scss']
+  selector: 'app-sales-create',
+  templateUrl: './sales-create.component.html',
+  styleUrls: ['./sales-create.component.scss']
 })
-export class SalesManagerComponent extends BaseComponent implements OnInit {
+export class SalesCreateComponent extends BaseComponent implements OnInit {
 
   public id: any = this.activatedRoute.snapshot.paramMap.get('id');
   public principalPrice: number = 0;
-  public elaborationDate: string = '';
 
   constructor(
     private fb: FormBuilder,
@@ -37,16 +35,18 @@ export class SalesManagerComponent extends BaseComponent implements OnInit {
   }
 
   public save(): void {
+    let date: Date = new Date;
+
     const sell: Sales = {
       id: parseInt(this.id),
-      principalPrice: this.principalPrice,
-      elaborationDate: this.elaborationDate,
       product: this.form.value.product,
       brand: this.form.value.product,
       model: this.form.value.product,
       reference: this.form.value.product,
       quantity: this.form.value.product,
-      sellPrice: this.form.value.product
+      principalPrice: this.principalPrice,
+      sellPrice: this.form.value.product,
+      elaborationDate: date.toString()
     }
 
     if (this.form.valid) {
@@ -67,3 +67,4 @@ export class SalesManagerComponent extends BaseComponent implements OnInit {
     }
   }
 }
+
