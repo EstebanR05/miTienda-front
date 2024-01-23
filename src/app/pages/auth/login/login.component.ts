@@ -36,7 +36,7 @@ export class LoginComponent {
     }
 
     submit() {
-        this.router.navigate(["dashboard"]);
+        this.router.navigate(["layout/dashboard"]);
     }
 
     getControl(control: string, form: FormGroup = this.form): AbstractControl {
