@@ -10,9 +10,10 @@ import { EventService } from './base/demo/service/event.service';
 import { IconService } from './base/demo/service/icon.service';
 import { NodeService } from './base/demo/service/node.service';
 import { PhotoService } from './base/demo/service/photo.service';
+import { BaseComponent } from './shared/Core/base-component/base.component';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, BaseComponent],
     imports: [AppRoutingModule, AppLayoutModule],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
