@@ -41,15 +41,16 @@ export class AppMenuComponent implements OnInit {
                         icon: 'pi pi-fw pi-cog',
                         items: [
                             {
-                                label: 'Repuestos',
-                                icon: 'pi pi-fw pi-wrench',
-                                routerLink: ['/layout/spareParts'],
-                            },
-                            {
                                 label: 'Trabajadores',
                                 icon: 'pi pi-fw pi-users',
                                 routerLink: ['/layout/employees'],
                             },
+                            {
+                                label: 'Repuestos',
+                                icon: 'pi pi-fw pi-wrench',
+                                routerLink: ['/layout/spareParts'],
+                            },
+                            
                             {
                                 label: 'Marcas',
                                 icon: 'pi pi-fw pi-car',
