@@ -36,14 +36,14 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>Mazda 323</td>
-						<td>Estandar</td>
+					<tr *ngFor="let brand of brands">
+						<td>{{brand.brand}}</td>
+						<td>{{brand.version}}</td>
 						<td class="p-0">
 							<!-- edit -->
 							<button type="button"
 								class="btn btn-white text-dark"
-								routerLink="edit/1">
+								routerLink="edit/{{brand.id}}">
 								<svg xmlns="http://www.w3.org/2000/svg"
 									width="16"
 									height="16"

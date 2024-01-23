@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BaseComponent } from 'src/app/shared/Core/base-component/base.component';
+import { SpareParts } from 'src/app/shared/interfaces/SpareParts.interface';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -8,6 +9,12 @@ import Swal from 'sweetalert2';
   styleUrls: ['./spare-parts-list.component.scss']
 })
 export class SparePartsListComponent extends BaseComponent implements OnInit {
+
+  public spareParts: SpareParts[] = [{
+    id: 1,
+    name: 'Empaque de culata	',
+    reference: 1112
+  }];
 
   constructor() { super() }
 

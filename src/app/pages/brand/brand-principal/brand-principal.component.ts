@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BaseComponent } from 'src/app/shared/Core/base-component/base.component';
+import { Brand } from 'src/app/shared/interfaces/Brand.interface';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -8,6 +9,12 @@ import Swal from 'sweetalert2';
   styleUrls: ['./brand-principal.component.scss']
 })
 export class BrandPrincipalComponent extends BaseComponent implements OnInit {
+
+  public brands: Brand[] = [{
+    id: 1,
+    brand: 'Mazda 323',
+    version: 'Estandar'
+  }]
 
   constructor() { super() }
 

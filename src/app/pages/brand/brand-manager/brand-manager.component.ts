@@ -13,7 +13,7 @@ import Swal from 'sweetalert2';
 export class BrandManagerComponent extends BaseComponent implements OnInit {
 
   public id: any = this.activatedRoute.snapshot.paramMap.get('id');
-public versions: string[] = ['Coupe', 'Estandar']
+  public versions: string[] = ['Coupe', 'Estandar']
 
   constructor(
     public location: Location,

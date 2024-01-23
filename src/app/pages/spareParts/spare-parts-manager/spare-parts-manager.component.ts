@@ -1,7 +1,7 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BaseComponent } from 'src/app/shared/Core/base-component/base.component';
 import Swal from 'sweetalert2';
 
@@ -12,10 +12,13 @@ import Swal from 'sweetalert2';
 })
 export class SparePartsManagerComponent extends BaseComponent implements OnInit {
 
+  public id: any = this.activatedRoute.snapshot.paramMap.get('id');
+
   constructor(
     private fb: FormBuilder,
     public location: Location,
-    private router: Router
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) { super() }
 
   ngOnInit(): void {
